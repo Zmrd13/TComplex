@@ -1,0 +1,7 @@
+project(GTests)
+add_subdirectory(gtest_libs)
+include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
+add_executable(Google_Tests_run test.cpp)
+add_executable(Editor_Google_Tests_run testEditor.cpp ../TComplexEditor.cpp ../TComplexEditor.h)
+target_link_libraries(Google_Tests_run gtest gtest_main)
+target_link_libraries(Editor_Google_Tests_run gtest gtest_main)

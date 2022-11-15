@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.23)
+project(TComplex)
+add_subdirectory(test)
+set(CMAKE_CXX_STANDARD 14)
+add_executable(TComplex main.cpp TComplexEditor.cpp TComplexEditor.h TComplex.h)
